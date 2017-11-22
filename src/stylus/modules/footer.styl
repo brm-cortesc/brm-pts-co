@@ -1,0 +1,27 @@
+footer
+	background $azul
+	color white
+	gradient-horizontal($azul, $magenta, 0,100%)
+	margin-top 2rem
+	padding 1rem
+	position relative
+	text-align center
+	text-transform uppercase
+	z-index 2
+	
+	&::before
+		background $azul
+		border-radius 5rem
+		gradient-horizontal($azul, $magenta, -7%,106%)
+		height 7rem
+		left 50%
+		position absolute
+		top -1.5rem
+		transform translateX(-@left)
+		width 90%
+		z-index -1
+
+// 	img
+// 		img-responsive(block)
+// 		margin 1rem auto
+// 		width 11.3rem

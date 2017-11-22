@@ -1,0 +1,78 @@
+.btn
+	background transparent
+	border none
+	border-radius 0
+	display block
+	margin 1rem auto
+	padding 1rem
+	position relative
+	text-transform uppercase
+	transitionBase()
+	width 100%
+	
+	&:active,
+	&:hover
+		outline none !important
+		outline 0 !important
+	
+	&-menu
+		background-color white
+		border 1px solid $azul
+		circ(6rem)
+		margin 1rem 0
+		
+
+		.m-line
+			background-color $azul
+			border-radius 1rem
+			display block
+			height 0.5rem
+			left 15%
+			margin 0
+			padding 0
+			position absolute
+			transitionBase()
+			width 70%
+			
+
+			&:nth-of-type(1)
+				top 1.5rem
+			
+			&:nth-of-type(2)
+				top 50%
+				transform translateY(-@top)
+			
+			&:nth-of-type(3)
+				bottom 1.5rem
+				
+
+		&.active
+			.m-line
+				&:nth-of-type(1)
+					left 50%
+					top 50%
+					transform translate3d(-50%,-50%,0) rotate(-45deg)
+				&:nth-of-type(2)
+					opacity 0
+				&:nth-of-type(3)
+					bottom unset
+					left 50%
+					top 50%
+					transform translate3d(-50%,-50%,0) rotate(45deg)
+			
+	
+	&-more
+		background-image embedurl('../embed/btn-mas.png')
+		background-repeat no-repeat
+		background-size 100%
+		height 8rem
+		max-width 20rem
+		overflow hidden
+		text-decoration none
+		text-indent -9999px
+		width 100%
+		
+		&:hover
+			transform scale(1.1)
+			
+		

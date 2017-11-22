@@ -1,0 +1,35 @@
+.slider
+	
+	.slide
+		&-img
+			img
+				img-responsive(block)
+				width 100%
+		&-text
+			border-bottom 1px solid $gris
+			color $gris
+			font-size 3rem
+			padding 1rem
+			text-align center
+
+.slick
+	&-arrow
+		background-color rgba(255, 255, 255, .75)
+		border none
+		border-radius 100%
+		position absolute
+		top 50%
+		transform translateY(-50%)
+		z-index 20
+		
+		&:active,
+		&:focus,
+		&:hover
+			outline 0 !important
+			outline none !important
+			
+
+	&-next
+		right 0.5rem
+	&-prev
+		left 0.5rem

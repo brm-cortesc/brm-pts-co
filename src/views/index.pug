@@ -1,0 +1,116 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	title Puntos Colombia
+
+block content
+	
+	//Slider
+	section.container-fluid.container-slider
+
+			div.slider
+
+				//Item
+				article.slide
+					div.slide-img
+						+image('slides/slide-01.png', 'Unimos al país CON PUNTOS')
+
+					h2.slide-text Unimos al país CON PUNTOS
+
+				///-Item
+
+				//Item
+				article.slide
+
+					div.slide-img
+						+image('slides/slide-02.png', 'Unimos al país CON PUNTOS')
+					
+					h2.slide-text Unimos al país CON PUNTOS
+				///-Item
+
+	///-Slider
+
+	
+	//Quienes Somos
+	section.container-fluid.container-who
+
+		div.row
+
+			article.col-content
+				h3.text-center ¿Quiénes somos?
+				
+				p.text-center Bienvenido al programa de fidelización más grande de Colombia.
+
+				a.btn.btn-more(href="#") Ver más
+
+		+image('quienes-somos.png', '¿Quiénes somos?')
+	///-Quienes Somos
+
+	//Nuestro equipo
+	section.container-fluid.container-equipo
+		div.row
+
+			article.col-content
+				h3 Nuestro Equipo
+
+				p Expertos en ofrecer nuevas experiencias a los colombianos.
+
+				a.btn.btn-more(href="#") Ver más
+
+		+image('equipo.png', 'Nuestro equipo')
+	///-Nuestro equipo
+
+	//Súper Aliados
+	section.container-fluid.container-aliados
+		div.row
+			article.col-content
+				h3 Súper aliados 
+
+				p El programa ya está listo, solo faltas tú.
+				
+				a.btn.btn-more(href="#") Ver más
+				
+		+image('beneficios.png', 'Súper Aliados')
+
+	///-Súper Aliados
+	
+	//Beneficios
+	section.container-fluid.container-beneficios
+		div.row
+			article.col-content
+				h3 Beneficios para clientes
+
+				p El punto es ofrecerte experiencias a tu medida.
+	///-Beneficios
+
+
+	+modal('who')
+		h3 ¿QUIÉNES SOMOS?
+
+		p.text-center Bienvenido al programa de fidelización más grande de Colombia.
+
+		p Somos Puntos Colombia, y estamos listos para acompañar los sueños de los colombianos a través de una coalición que nace de la sinergia entre Grupo Éxito y Bancolombia, uniendo el retail con la banca para darle vida a un programa de fidelización pionero en Latinoamérica, que acercará a más de 10 millones de clientes a ofertas, servicios y experiencias tan cotidianas como sus aspiraciones y deseos, poniendo en sus manos múltiples beneficios a los que pueden acceder desde la redención y acumulación de puntos en comercios líderes de todo el país.
+
+
+
+	+modal('beneficios')
+		h3 Beneficios para clientes
+
+		p.text-center El punto es ofrecerte experiencias a tu medida.
+
+		p Tu cotidianidad podrá ser un universo lleno de recompensas, porque ahora con Puntos Colombia, ganas puntos por disfrutar la vida. ¿Vas al supermercado? Puntos. ¿Pagas las boletas con tu tarjeta? Puntos. ¿Tanqueas tu carro? Más puntos. Puntos por vivir, puntos que podrás transformar en cosas que sí quisieras tener para ti, gracias a las múltiples opciones de aliados que están esperándote, y a un catálogo de redención tan diverso.
+		p Como eso que deseas a diario.
+		p ¿Estás listo para lo que viene?
+
+
+
+	
+
+
+
+block Scripts
+	script(type="text/javascript", src="js/pts-co.slider.js")
+	//-Acá se ponen js que solo vayan en ésta página
+
