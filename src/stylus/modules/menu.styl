@@ -3,19 +3,18 @@
 	color #fff
 	cuadrado(100%)
 	opacity 0
+	overflow hidden
 	pointer-events none
 	position fixed
 	text-align center
-	overflow hidden
-	// transitionBase()
-	z-index 50
+	z-index 1100
 	
 	&::before
 		animation 0.8s ease-out reverse backwards paused
-		gradient-horizontal($azul, $magenta, 0,100%)
 		border-radius 100%
 		content ''
 		display block
+		gradient-horizontal($azul, $magenta, 0,100%)
 		height 0
 		overflow hidden
 		padding-bottom 100%
@@ -71,9 +70,9 @@
 		pointer-events all
 		
 		&::before
-			animation-name menu-animation
 			animation-direction normal
 			animation-fill-mode forwards
+			animation-name menu-animation
 			animation-play-state running
 			
 

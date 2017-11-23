@@ -10,7 +10,5 @@ jQuery(document).ready(()=>{
 
   	jQuery('.slider').slick(slideHome);
 
-	console.log('hola slider')
-
 /*No pasar de aquí*/
 });

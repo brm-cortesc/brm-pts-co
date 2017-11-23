@@ -1,0 +1,68 @@
+.modal
+	padding-right 0 !important
+	&-content
+		background-color transparent
+		border none
+		border-radius 0
+		box-shadow none
+		
+	&-dialog
+		background-color white
+		box-shadow 0px 10px 5px 0px rgba(0,0,0,0.5)
+		padding 1rem 2rem
+		z-index 1041
+		
+		h3
+			margin-top 5rem
+			text-align center
+			
+		.btn
+			circ(5rem)
+			margin 0
+			position absolute
+			right 0.5rem
+			top 0.5rem
+			
+			.icon
+				circ(100%)
+				display block
+				
+
+		.text-center
+			margin-bottom 3rem
+			
+
+@media (min-width:$screen-sm)
+	.modal
+		left 50%
+		width 0
+		transitionBase()
+		&.in
+			left 0
+			width 100%
+		&-backdrop
+			display none
+		&-content
+			margin 1rem auto
+			max-width $screen-lg
+		
+		&-dialog
+			background-color #f7f5f5
+			box-shadow 0px 10px 5px 0px rgba(0,0,0,0.4), 0px 15px 5px 0px rgba(0,0,0,0.3), 0px 20px 5px 0px rgba(0,0,0,0.2), 0px 25px 5px 0px rgba(0,0,0,0.1)	
+			width 100%
+			
+
+	#beneficios
+		bottom 10rem
+		top initial
+		.modal
+			&-content
+				margin-left 55%
+				max-width 45%
+				
+				h3
+					margin-top 0
+					
+			&-dialog
+				.btn
+					z-index 20

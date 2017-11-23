@@ -7,9 +7,17 @@ header.container-fluid
 				span.m-line
 				span.m-line
 
-		div.col-logo
-			//Logo
-			h1.logo
-				+image('logo-pts-co.png', 'Puntos Colombia')
-			///-Logo
+		//Logo
+		if titulo == "Home"
+			div.col-logo
+				h1.logo
+					+image('logo-pts-co.png', 'Puntos Colombia')
+
+		else
+			div.col-logo
+				h2.logo
+					a(href="index.html"): +image('logo-pts-co.png', 'Puntos Colombia')
+	
+		///-Logo
+
 ///-Header

@@ -1,0 +1,64 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "Interna";
+	title Puntos Colombia
+
+block content
+		
+	//Nuestro equipo
+	section.container-fluid.container-equipo-interna
+		div.row
+
+			article.col-content.col-content-mid
+				h1 Nuestro Equipo
+
+				p.text-justify Ser el resultado de la sinergia entre dos grandes empresas, nos permite contar desde hoy con un equipo experto en temas de fidelidad, nutrido por actores de diversas disciplinas; con todo este talento, estamos listos para acompañar la historia de millones de personas, y desde un ecosistema de lealtad, acercarlas a lo que las hace felices. Somos un equipo obsesionado con los sueños de los colombianos, un lugar de puertas abiertas del que tú también puedes ser parte. 
+
+
+				div.container-oferta
+					div.oferta-header
+						div.col-cargo
+							h3 cargo
+						div.col-vacante
+							h3 vacantes
+
+					div.clearfix
+
+					-for(x = 0; x < 3 ;x++)
+						div.oferta-item
+							div.col-cargo
+								h4 Analista de ultra largo texto
+							div.col-vacante
+								p.vacante-num 3
+								a.btn.btn-more(href="#") Ver más
+
+							div.clearfix
+
+							div.oferta-desc
+
+								p.
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+								p.
+									Si quieres aplicar a esta oferta, envía tu hoja de vida al correo <a href="mailto:angela.acosta@puntoscolombia.com" target="_blank">angela.acosta@puntoscolombia.com</a>
+
+
+
+		+image('equipo.png', 'Nuestro Equipo')(class="img-container img-ofertas")
+
+	
+	///-Nuestro equipo
+
+	
+
+	
+
+
+
+block Scripts
+	//- script(type="text/javascript", src="js/pts-co.slider.js")
+	//-Acá se ponen js que solo vayan en ésta página
+

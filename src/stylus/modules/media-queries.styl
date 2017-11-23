@@ -5,6 +5,17 @@
 				margin 0 auto
 				max-width 66.6rem
 
+@media (min-width:490px)
+	.oferta
+		&-item
+			.btn,
+			.vacante-num
+				display inline-block
+				vertical-align middle
+				
+			.vacante-num
+				border-right 1px solid $gris
+				margin-right 2rem
 
 @media (min-width:$screen-sm)
 	header
@@ -13,6 +24,146 @@
 		.col-btn-menu
 			display none
 			
+	.col-logo
+		z-index 30
+	.container
+		&-aliados
+			margin-top 12rem
+		&-beneficios
+			margin-bottom 18rem
+			margin-top @margin-bottom
+			
+		&-equipo-interna
+			margin-bottom 2rem
+		&-slider
+			margin-bottom -10.6rem
+			position relative
+			top -10.6rem
+	
+		&-fluid
+			position relative
+	.img-container
+		max-width 40rem
+		position absolute
+		&-aliados
+			left 0
+			z-index 2000
+		&-equipo
+			right 0
+		&-who
+			top 16rem
+			
+	.img-ofertas
+		max-width 48%
+		top 50%
+		transform translateY(-@top)
+	.oferta
+		// &-desc
+		// 	margin-top 1rem
+		&-header
+			h3
+				font-size 1.7rem
+		&-item
+			padding 0.5rem
+			
+			.vacante-num
+				margin-right 1rem
+				padding 0.5rem 1rem
+				
 
-		// .logo
-		// 	margin 0 auto
+	.slider		
+		.slide
+			height 32rem
+			position relative
+			&-img
+				position relative
+				
+				img
+					max-width 32rem
+					position absolute
+					right 0
+					top 0
+			&-text
+				left 6rem
+				max-width 48%
+				position absolute
+				top 50%
+				transform translateY(-50%)
+				z-index 4
+				
+
+	.slick
+		&-arrow
+			background-color transparent
+			background-size 3rem
+			cuadrado(3rem)
+			
+
+@media (min-width: 980px)
+
+	.slider		
+		.slide
+			height 42rem
+			&-img
+				img
+					max-width 42rem
+					
+@media (min-width: $screen-lg)
+	.col-content
+		h1,
+		h3
+			font-size 3.5rem
+			
+		p
+			font-size 2rem
+	
+	.container
+		&-aliados
+			margin-top 17rem
+			
+		&-beneficios
+			margin-bottom 30rem
+			margin-top @margin-bottom
+			
+		&-equipo
+			margin-top 11rem
+			
+	.img-container
+		&-aliados
+			max-width 60rem
+		&-equipo
+			max-width 50rem
+		&-who
+			max-width 60rem
+			top 19rem
+		
+	.oferta
+
+		&-header
+			h3
+				font-size 1.7rem	
+	.slider	
+		.slide
+			&-text
+				font-size 4.5rem
+	
+	.slick
+		&-arrow
+			background-size 100%
+			cuadrado(6rem)
+			
+@media (min-width: 1400px)
+	.img-container
+		max-width 70rem
+		
+		
+	
+	.slider		
+		.slide
+			height 60rem
+			&-text
+				font-size 6rem
+			&-img
+				img
+					max-width 60rem
+					

@@ -9,7 +9,7 @@ vendor-prefixes    = o ms webkit moz official
 @import "modules/funciones"
 // @import "modules/fonts"
 // vertical rhythm & modular types
-// @stylint off
+
 @import "modules/typographic"
 $min-font          = 10px
 $max-font          = 14px
@@ -20,8 +20,8 @@ typographic()
 
 //Bootstrap v 3.3.7
 @import 'bootstrap.config'
-// @stylint on
 
+// @stylint on
 //Layout
 @import "modules/base"
 @import "modules/layout"
@@ -30,15 +30,15 @@ typographic()
 @import "modules/footer"
 @import "modules/menu"
 @import "modules/containers"
-// @stylint off
 @import "modules/columns"
-// @stylint on
 
 //Components
 @import "modules/buttons"
-// @import "modules/components"
-// @import "modules/forms"
+@import "modules/components"
 @import "modules/slider"
+@import "modules/modal"
+@import "modules/ofertas"
+// @import "modules/forms"
 
 // Extras
 @import "modules/utilities"

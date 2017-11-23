@@ -12,8 +12,6 @@ jQuery(document).ready(function () {
 
 	jQuery('.slider').slick(slideHome);
 
-	console.log('hola slider');
-
 	/*No pasar de aquí*/
 });
 //# sourceMappingURL=../maps/pts-co.slider.js.map
