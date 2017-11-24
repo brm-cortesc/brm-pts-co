@@ -48,7 +48,18 @@ block content
 							textarea(name="comentario", id="comentario")
 						///-comentario
 
+						//Acepto terminos
+						div.form-group.form-checkbox
+							div.checkbox
+								input(type="checkbox", name="politicas", id="politicas")
+								label(for="politicas")
+									| He leído y acepto los términos y condiciones establecidos en el aviso legal. 
+									a(href="#", target="_blank") Política de privacidad.
+						///-Acepto terminos
+
+						
 						button.btn.btn-submit(type="submit") Enviar
+
 
 
 

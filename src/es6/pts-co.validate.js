@@ -58,7 +58,8 @@ jQuery(document).ready( ()=>{
       nombre:       {required:true,letras:true},
       celular:     {required:true, digits:true, minlength:9, maxlength:10 },
       email:      {required:true, email:true},
-      comentario:    { required:true, maxlength:250  }
+      comentario:    { required:true, maxlength:250  },
+      politicas:    { required:true}
 
     },
 
@@ -81,6 +82,10 @@ jQuery(document).ready( ()=>{
       comentario:{
         required: 'C&uacute;entanos algo',
         maxlength: 'El mensaje es muy largo'
+
+      },
+      politicas:{
+        required: 'Debes aceptar los t&eacute;rminos y condiciones'
 
       }
 
