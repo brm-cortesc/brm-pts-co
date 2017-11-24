@@ -52,9 +52,7 @@
 			width 100%
 			
 
-	#beneficios
-		bottom 10rem
-		top initial
+	#beneficios-modal
 		.modal
 			&-content
 				margin-left 55%
@@ -64,5 +62,21 @@
 					margin-top 0
 					
 			&-dialog
+				top 32rem
 				.btn
 					z-index 20
+					
+	#who-modal
+		.modal
+			&-dialog
+				top 25rem
+				
+@media (min-width:1000px)
+	#beneficios-modal
+		.modal
+			&-dialog
+				top 33rem
+	#who-modal
+		.modal
+			&-dialog
+				top 33rem

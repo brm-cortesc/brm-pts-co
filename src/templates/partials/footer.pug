@@ -5,27 +5,27 @@ footer.container-fluid
 		div.col-text
 			p &copy; Puntos Colombia
 
-		div.col-social
-			p.social-icons
+//- 		div.col-social
+//- 			p.social-icons
 
-				//Facebook
-				a(href="#")
-					+image('icon-fb.png', 'Puntos Colombia en Facebook')
+//- 				//Facebook
+//- 				a(href="#")
+//- 					+image('icon-fb.png', 'Puntos Colombia en Facebook')
 
-				///-Facebook
+//- 				///-Facebook
 
-				//Instragram
-				a(href="#")
-					+image('icon-ins.png', 'Puntos Colombia en Instragram')
+//- 				//Instragram
+//- 				a(href="#")
+//- 					+image('icon-ins.png', 'Puntos Colombia en Instragram')
 
-				///-Instragram
+//- 				///-Instragram
 
-				//Twitter
-				a(href="#")
-					+image('icon-tw.png', 'Puntos Colombia en Twitter')
-				///-Twitter	
+//- 				//Twitter
+//- 				a(href="#")
+//- 					+image('icon-tw.png', 'Puntos Colombia en Twitter')
+//- 				///-Twitter	
 
-///-Footer
+//- ///-Footer
 
 //Scripts
 //-Estos son los scripts que van en todos los htmls del desarrollo
@@ -34,8 +34,10 @@ if debug == true
 	//-Este arreglo imprime todos los js que se declaren en arreglo jsLibs en gulpfile.js:70
 	-for(x =0; x < libs.length; x++)
 		script(src=libs[x])
+	script(type="text/javascript", src="js/pts-co.init.js")
 
 
 else
 	script(src='js/libs/jquery.js')
 	script(src="js/libs.min.js")
+	script(type="text/javascript", src="js/pts-co.init.js")

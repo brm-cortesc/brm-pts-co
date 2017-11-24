@@ -38,6 +38,21 @@ head
 body
 
 	//-Layout del header (logo, menu, login, etc)
+	if titulo == 'Home'
+		div.navigator
+			ul
+				li
+					a(href="#who") ¿Quiénes somos?
+
+				li
+					a(href="#equipo") Nuestro equipo
+
+				li
+					a(href="#aliados") Súper aliados
+
+				li
+					a(href="#beneficios") Beneficios para clientes
+
 
 	include partials/menu
 	include partials/header

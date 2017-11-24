@@ -5,19 +5,36 @@ nav.menu()
 		button.btn.btn-close(type="button")
 			i.icon.icon-close-white
 		///-Btn cerrar
-		
-		ul.menu-list
 
-			li
-				a(href="#") ¿Quiénes somos?
+		if titulo == "Home"
+			ul.menu-list
 
-			li
-				a(href="#") Nuestro equipo
+				li
+					a(href="#who") ¿Quiénes somos?
 
-			li
-				a(href="#") Súper aliados
+				li
+					a(href="nuestro-equipo.html") Nuestro equipo
 
-			li
-				a(href="#") Beneficios para clientes
+				li
+					a(href="super-aliados.html") Súper aliados
 
+				li
+					a(href="#beneficios") Beneficios para clientes
+
+		else
+			ul.menu-list
+
+				li
+					a(href="index.html#who") ¿Quiénes somos?
+
+				li
+					a(href="nuestro-equipo.html") Nuestro equipo
+
+				li
+					a(href="super-aliados.html") Súper aliados
+
+				li
+					a(href="index.html#beneficios") Beneficios para clientes
+
+		+image('icon-menu.png', 'Puntos Colombia')
 ///-Menu mobile

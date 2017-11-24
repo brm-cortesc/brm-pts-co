@@ -6,6 +6,7 @@
 		opacity 0
 		overflow hidden
 		padding 0 1rem
+		position relative
 		text-align left
 		transitionBase()
 		
@@ -17,6 +18,23 @@
 			
 		a
 			color $magenta
+			
+		p
+			&:nth-of-type(1)
+				margin-top 3rem
+			
+		.btn-close
+			cuadrado(3rem !important)
+			margin 0 !important
+			padding 0
+			position absolute
+			right 0.5rem
+			top 0.5rem
+			
+			.icon
+				cuadrado(100%)
+				display block
+			
 	&-header
 		border-bottom 1px solid $gris
 		clearfix()

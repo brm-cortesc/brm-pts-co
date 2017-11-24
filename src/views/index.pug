@@ -35,7 +35,7 @@ block content
 
 	
 	//Quienes Somos
-	section.container-fluid.container-who
+	section.container-fluid.container-who#who
 
 		div.row
 
@@ -44,13 +44,13 @@ block content
 				
 				p.text-center Bienvenido al programa de fidelización más grande de Colombia.
 
-				a.btn.btn-more(href="#") Ver más
+				a.btn.btn-more.btn-who(href="#") Ver más
 
 		+image('equipo.png', 'Nuestro Equipo')(class="img-container img-container-who")
 	///-Quienes Somos
 
 	//Nuestro equipo
-	section.container-fluid.container-equipo
+	section.container-fluid.container-equipo#equipo
 		div.row
 
 			article.col-content
@@ -64,31 +64,31 @@ block content
 	///-Nuestro equipo
 
 	//Súper Aliados
-	section.container-fluid.container-aliados
+	section.container-fluid.container-aliados#aliados
 		div.row
 			article.col-content
 				h3 Súper aliados 
 
 				p El programa ya está listo, solo faltas tú.
 				
-				a.btn.btn-more(href="#") Ver más
+				a.btn.btn-more(href="super-aliados.html") Ver más
 				
-		+image('beneficios.png', 'Súper Aliados')(class="img-container img-container-aliados")
+		+image('beneficios.png', 'Beneficios')(class="img-container img-container-aliados")
 
 	///-Súper Aliados
 	
 	//Beneficios
-	section.container-fluid.container-beneficios
+	section.container-fluid.container-beneficios#beneficios
 		div.row
 			article.col-content
 				h3 Beneficios para clientes
 
 				p El punto es ofrecerte experiencias a tu medida.
-				a.btn.btn-more(href="#") Ver más
+				a.btn.btn-more.btn-beneficios(href="#") Ver más
 	///-Beneficios
 
 
-	+modal('who')
+	+modal('who-modal')
 		h3 ¿QUIÉNES SOMOS?
 
 		p.text-center Bienvenido al programa de fidelización más grande de Colombia.
@@ -97,7 +97,7 @@ block content
 
 
 
-	+modal('beneficios')
+	+modal('beneficios-modal')
 		h3 Beneficios para clientes
 
 		p.text-center El punto es ofrecerte experiencias a tu medida.
@@ -113,6 +113,6 @@ block content
 
 
 block Scripts
-	script(type="text/javascript", src="js/pts-co.slider.js")
+	//- script(type="text/javascript", src="js/pts-co.init.js")
 	//-Acá se ponen js que solo vayan en ésta página
 

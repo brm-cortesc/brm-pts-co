@@ -1,0 +1,47 @@
+.form
+	&-group
+		margin 1rem auto
+		transitionBase()
+		
+
+		&.active
+			label
+				color $azul
+				
+			input,
+			textarea
+				border-color $azul
+		
+		label
+			text-transform uppercase
+			transitionBase()
+			
+		input,
+		textarea
+			background-color #f7f5f5
+			border 1px solid $gris
+			border-radius 2rem
+			padding 0.5rem 1rem
+			resize none
+			transitionBase()
+			width 100%
+			
+			&:hover,
+			&:active,
+			&:focus
+				outline none !important
+				outline 0 !important
+				
+		
+		input
+			
+			&[type="number"]::-webkit-outer-spin-button
+			&[type="number"]::-webkit-inner-spin-button
+				appearance none
+				margin 0
+				
+
+.msn-place
+	color $brand-warning
+	padding 0 1.5rem
+						

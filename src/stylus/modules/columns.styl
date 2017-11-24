@@ -4,6 +4,11 @@
 // @stylint off
 
 .col
+	&-btn
+		display none
+		make-xs-column(2)
+		make-sm-column-offset(6)
+
 	&-btn-menu
 		make-xs-column(4)
 		
@@ -19,12 +24,14 @@
 		make-xs-column(6)
 		make-sm-column(4)
 		// make-sm-column-offset(4)
-	&-social,
-	&-text
-		make-sm-column(3)
+	// &-social,
+	// &-text
+	// 	make-sm-column(3)
+	
 	&-social
 		make-sm-column-offset(6)
 		
+	&-cargo,
 	&-vacante
 		make-xs-column(6)
 	
