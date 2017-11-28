@@ -54,6 +54,7 @@ jQuery(document).ready(()=>{
   					jQuery('body').toggleClass('body-fixed');
 
   				}else{
+            e.preventDefault();
             jQuery(this).parent().removeClass('active')
             jQuery('.btn-vacante').removeClass('active')
           }
@@ -89,14 +90,14 @@ jQuery(document).ready(()=>{
 
     };
 
-    jQuery('.navigator a').click( function (e) {
-      e.preventDefault();
-      go(this);
-    });
+    // jQuery('.navigator a').click( function (e) {
+    //   e.preventDefault();
+    //   go(this);
+    // });
 
     /*scroll suavizado con menu*/
 
-    jQuery('.menu li a').click(function(e) {
+    jQuery('.menu li a, .navigator a').click(function(e) {
      
      let that = this;
      let href = window.location.pathname;

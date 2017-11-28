@@ -12,6 +12,7 @@ head
 		meta(name="description" content="Puntos Colombia" )
 	meta(http-equiv='X-UA-Compatible', content='IE=edge')
 	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
 	
 	if debug == true
 		link(rel='stylesheet', href='css/slick.css')
@@ -52,6 +53,22 @@ body
 
 				li
 					a(href="#beneficios") Beneficios para clientes
+
+	else
+		div.navigator
+			ul
+				li
+					a(href="index.html#who") ¿Quiénes somos?
+
+				li
+					a(href="nuestro-equipo.html") Nuestro equipo
+
+				li
+					a(href="super-aliados.html") Súper aliados
+
+				li
+					a(href="index.html#beneficios") Beneficios para clientes
+
 
 
 	include partials/menu
