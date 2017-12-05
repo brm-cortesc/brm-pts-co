@@ -103,7 +103,7 @@ jQuery(document).ready(()=>{
      let href = window.location.pathname;
      let goTo = jQuery(this).prop('pathname')
 
-     console.log(goTo)
+     // console.log(goTo)
 
      // console.log(href)
 

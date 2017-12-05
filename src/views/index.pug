@@ -46,11 +46,40 @@ block content
 
 				a.btn.btn-more.btn-who(href="#") Ver más
 
-		+image('equipo.png', 'Nuestro Equipo')(class="img-container img-container-who")
 	///-Quienes Somos
 
+	
+	//Beneficios
+	section.container-fluid.container-beneficios#beneficios
+		+image('beneficios.png', 'Beneficios')(class="img-container img-container-beneficio")
+		div.row
+			article.col-content
+				h3 Beneficios para clientes
+
+				p El punto es ofrecerte experiencias a tu medida.
+				a.btn.btn-more.btn-beneficios(href="#") Ver más
+	///-Beneficios
+
+
+	//Súper Aliados
+	section.container-fluid.container-aliados#aliados
+		+image('aliados.png', 'Super Aliados')(class="img-container img-container-aliados")
+		div.row
+			article.col-content
+				h3 Súper aliados 
+
+				p El programa ya está listo, solo faltas tú.
+				
+				a.btn.btn-more(href="super-aliados.html") Ver más
+				
+
+	///-Súper Aliados
+	
+	
+	
 	//Nuestro equipo
 	section.container-fluid.container-equipo#equipo
+		+image('equipo.png', 'Quienes Somos')(class="img-container img-container-equipo")
 		div.row
 
 			article.col-content
@@ -60,33 +89,9 @@ block content
 
 				a.btn.btn-more(href="nuestro-equipo.html") Ver más
 
-		+image('aliados.png', 'Super Aliados')(class="img-container img-container-equipo")
+
+
 	///-Nuestro equipo
-
-	//Súper Aliados
-	section.container-fluid.container-aliados#aliados
-		div.row
-			article.col-content
-				h3 Súper aliados 
-
-				p El programa ya está listo, solo faltas tú.
-				
-				a.btn.btn-more(href="super-aliados.html") Ver más
-				
-		+image('beneficios.png', 'Beneficios')(class="img-container img-container-aliados")
-
-	///-Súper Aliados
-	
-	//Beneficios
-	section.container-fluid.container-beneficios#beneficios
-		div.row
-			article.col-content
-				h3 Beneficios para clientes
-
-				p El punto es ofrecerte experiencias a tu medida.
-				a.btn.btn-more.btn-beneficios(href="#") Ver más
-	///-Beneficios
-
 
 	+modal('who-modal')
 		h3 ¿QUIÉNES SOMOS?

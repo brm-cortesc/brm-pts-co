@@ -52,15 +52,16 @@
 		z-index 30
 	.container
 		&-aliados
-			margin-top 12rem
-		&-beneficios
+			margin-top 29rem
+		// &-beneficios
+		// 	margin-bottom 18rem
+		// 	margin-top @margin-bottom
+			
+		// &-form
+		// 	margin-bottom 4rem
+		&-equipo
 			margin-bottom 18rem
 			margin-top @margin-bottom
-			
-		&-form
-			margin-bottom 4rem
-		&-equipo-interna
-			margin-bottom 2rem
 		&-slider
 			margin-bottom -10.6rem
 			position relative
@@ -78,12 +79,15 @@
 		max-width 40rem
 		position absolute
 		&-aliados
-			left 0
-			z-index 2000
-		&-equipo
 			right 0
-		&-who
-			top 16rem
+			top -13rem
+			// z-index 2000
+		&-beneficio
+			z-index 999999999
+		&-equipo
+			top -10rem
+		// &-who
+		// 	top 16rem
 			
 	.img-ofertas
 		max-width 48%
@@ -117,7 +121,7 @@
 				position relative
 				
 				img
-					max-width 32rem
+					max-width 29rem
 					position absolute
 					right 0
 					top 0
@@ -137,10 +141,10 @@
 			cuadrado(3rem)
 			
 
-@media (min-width: 820px)
-	.container
-		&-aliados
-			margin-top 16rem
+// @media (min-width: 820px)
+// 	.container
+// 		&-aliados
+// 			margin-top 16rem
 
 @media (min-width: 980px)
 
@@ -156,7 +160,7 @@
 
 	.slider		
 		.slide
-			height 42rem
+			height 46rem
 			&-img
 				img
 					max-width 42rem
@@ -180,28 +184,23 @@
 	
 	.container
 		&-aliados
-			margin-top 17rem
-			
-		&-beneficios
-			margin-bottom 30rem
-			margin-top @margin-bottom
-			
+			margin-top 36rem			
 		
-			
 		&-equipo
-			margin-top 11rem
-	
+			margin-bottom 22rem
+			margin-top 25rem
+
 
 
 	.img-container
+		max-width 60rem
 		&-aliados
-			max-width 60rem
-		&-equipo
-			max-width 50rem
-		&-who
-			max-width 60rem
-			top 19rem
+			top -21rem
 		
+		&-beneficio
+			top -10rem
+			
+
 	.oferta
 
 		&-header
@@ -220,11 +219,17 @@
 @media (min-width: 1400px)
 
 	.container
-		&-beneficios
-			margin-bottom 30rem
+		&-aliados
+			margin-top 42rem
+		&-equipo
+			margin-bottom 26rem
 			margin-top 40rem
 	.img-container
 		max-width 70rem
+		
+
+		&-equipo
+			top -17rem
 		
 		
 	
